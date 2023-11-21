@@ -1,27 +1,31 @@
 package com.example.firstandroidapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.RadioGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.appcompat.widget.SwitchCompat
 import kotlin.math.ceil
 
 class TipAmountActivity : AppCompatActivity() {
+    private lateinit var etCostOfService: AppCompatEditText
+    private lateinit var rgServiceOptions: RadioGroup
+    private lateinit var roundUpTipSwitch: SwitchCompat
+    private lateinit var btnCalculateTip: AppCompatButton
+    private lateinit var tvTipAmount: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tip_amount)
-        val etCostOfService : AppCompatEditText = findViewById(R.id.etCostOfService)
-        val rgServiceOptions : RadioGroup = findViewById(R.id.rgServiceOptions)
-        val roundUpTipSwitch : SwitchCompat = findViewById(R.id.scRoundUpTip)
-        val btnCalculateTip : AppCompatButton = findViewById(R.id.btnCalculate)
-        val tvTipAmount : TextView = findViewById(R.id.tvTipAmount)
+        findViews()
+        onButtonClicked()
+    }
 
+    private fun onButtonClicked() {
         btnCalculateTip.setOnClickListener {
             val costOfServiceValue = etCostOfService.text.toString().toDoubleOrNull()
-            var result : Double = 0.0
+            var result: Double = 0.0
 
             result = when (rgServiceOptions.checkedRadioButtonId) {
                 R.id.rbAmazing -> {
@@ -48,6 +52,13 @@ class TipAmountActivity : AppCompatActivity() {
             }
 
         }
+    }
 
+    private fun findViews() {
+        etCostOfService = findViewById(R.id.etCostOfService)
+        rgServiceOptions = findViewById(R.id.rgServiceOptions)
+        roundUpTipSwitch = findViewById(R.id.scRoundUpTip)
+        btnCalculateTip = findViewById(R.id.btnCalculate)
+        tvTipAmount = findViewById(R.id.tvTipAmount)
     }
 }
