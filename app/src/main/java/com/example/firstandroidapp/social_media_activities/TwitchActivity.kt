@@ -1,7 +1,8 @@
-package com.example.firstandroidapp
+package com.example.firstandroidapp.social_media_activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.firstandroidapp.R
 
 class TwitchActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

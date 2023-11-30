@@ -13,7 +13,13 @@
         android:theme="@style/Theme.FirstAndroidApp"
         tools:targetApi="31">
         <activity
-            android:name=".SnapchatActivity"
+            android:name=".screen_order_activity.SecondScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen_order_activity.FirstScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".social_media_activities.SnapchatActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,39 +28,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NetflixConstraintActivity"
-            android:exported="true">
-        </activity>
+            android:name=".social_media_activities.NetflixConstraintActivity"
+            android:exported="true"></activity>
         <activity
-            android:name=".TwitchActivity"
-            android:exported="true">
-        </activity>
+            android:name=".social_media_activities.TwitchActivity"
+            android:exported="true"></activity>
         <activity
-            android:name=".TipAmountActivity"
-            android:exported="true">
-        </activity>
+            android:name=".different_layout_activities.TipAmountActivity"
+            android:exported="true"></activity>
         <activity
-            android:name=".NetflixActivity"
-            android:exported="true">
-        </activity>
+            android:name=".social_media_activities.NetflixActivity"
+            android:exported="true"></activity>
         <activity
-            android:name=".InstagramActivity"
-            android:exported="true">
-        </activity>
+            android:name=".social_media_activities.InstagramActivity"
+            android:exported="true"></activity>
         <activity
-            android:name=".LinearLayoutActivity"
-            android:exported="true">
-
-        </activity>
+            android:name=".different_layout_activities.LinearLayoutActivity"
+            android:exported="true"></activity>
         <activity
-            android:name=".RelativeLayoutActivity"
-            android:exported="true">
-
-        </activity>
+            android:name=".different_layout_activities.RelativeLayoutActivity"
+            android:exported="true"></activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:name=".different_layout_activities.MainActivity"
+            android:exported="true"></activity>
     </application>
 
 </manifest>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/MediumVioletRed"
-    tools:context=".InstagramActivity">
+    tools:context=".social_media_activities.InstagramActivity">
 
     <TextView
         android:id="@+id/textView"

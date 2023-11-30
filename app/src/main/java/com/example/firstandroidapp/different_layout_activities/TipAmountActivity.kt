@@ -1,4 +1,4 @@
-package com.example.firstandroidapp
+package com.example.firstandroidapp.different_layout_activities
 
 import android.os.Bundle
 import android.widget.RadioGroup
@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.appcompat.widget.SwitchCompat
+import com.example.firstandroidapp.R
 import kotlin.math.ceil
 
 class TipAmountActivity : AppCompatActivity() {

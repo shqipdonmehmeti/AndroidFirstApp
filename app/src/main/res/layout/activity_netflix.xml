@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/thomas"
-    tools:context=".NetflixActivity">
+    tools:context=".social_media_activities.NetflixActivity">
 
     <TextView
         android:layout_width="wrap_content"
