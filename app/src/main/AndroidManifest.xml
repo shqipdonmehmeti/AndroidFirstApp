@@ -16,10 +16,10 @@
             android:name=".screen_order_activity.SecondScreenActivity"
             android:exported="false" />
         <activity
-            android:name=".screen_order_activity.FirstScreenActivity"
+            android:name=".social_media_activities.SnapchatActivity"
             android:exported="false" />
         <activity
-            android:name=".social_media_activities.SnapchatActivity"
+            android:name=".screen_order_activity.FirstScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,28 +29,28 @@
         </activity>
         <activity
             android:name=".social_media_activities.NetflixConstraintActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".social_media_activities.TwitchActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".different_layout_activities.TipAmountActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".social_media_activities.NetflixActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".social_media_activities.InstagramActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".different_layout_activities.LinearLayoutActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".different_layout_activities.RelativeLayoutActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".different_layout_activities.MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
