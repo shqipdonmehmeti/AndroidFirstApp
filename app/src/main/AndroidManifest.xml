@@ -13,13 +13,16 @@
         android:theme="@style/Theme.FirstAndroidApp"
         tools:targetApi="31">
         <activity
+            android:name=".screen_order_activity.FirstScreenActivity"
+            android:exported="false" />
+        <activity
             android:name=".screen_order_activity.SecondScreenActivity"
             android:exported="false" />
         <activity
             android:name=".social_media_activities.SnapchatActivity"
             android:exported="false" />
         <activity
-            android:name=".screen_order_activity.FirstScreenActivity"
+            android:name=".different_layout_activities.SimpleListViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
